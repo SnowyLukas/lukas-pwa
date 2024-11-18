@@ -23,13 +23,19 @@ import ButtonComponent from "../components/ButtonComponent.astro";
     <!--
       nedenfor er til den del omkring HTML og CSS
     -->
-    <!-- Indsæt ImageComponent	-->
+    <ImageComponent
+  src="https://cdn2.thecatapi.com/images/ets_USqdE.jpg"
+  alt="Cat Image" 
+/>
       
 
     <!-- 
 		Indsæt tagline
 		brug et <p class="text-center tiny-text"></p>
-		-->
+		--><p calss="text-center tiny-text">
+      The CATalog <br />
+  Delivers Cats around the clock.
+</p>
       
 
     <!-- 
@@ -44,11 +50,29 @@ import ButtonComponent from "../components/ButtonComponent.astro";
             id="id here"
         	/>
 	  -->
+  <div class="text-container">
+
+    <IconWithText
+  iconSrc="../../public/icons/pasport.svg"
+  subText="/Temperament"
+  id="fetchContentOne" 
+/>
+<IconWithText
+  iconSrc="../../public/icons/box.svg"
+  subText="/Origin"
+  id="fetchContentTwo" 
+/>
+<IconWithText
+  iconSrc="../../public/icons/energy.svg"
+  subText="/Energy level"
+  id="fetchContentThree" 
+/>
       
     </div>
 
     <!--Indsæt ButtonComponent med attribute: text="Din tekst"-->
-    
+  <ButtonComponent text="New Cat" />
+  
   </main>
 </Layout>
 
